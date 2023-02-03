@@ -4,10 +4,6 @@
 # permutation of order of variables; omit nperm to obtain formula
 # with variables sorted by decreasing number of NAs
 
-# mtcars$gear[1:5] <- NA
-# mtcars$hp[1:10]  <- NA
-# reformM(formula = ~ hp + I(wt) + I(gear) + cyl , data = mtcars)
-
 reformM <- function(formula, data, nperm) {
 
   tlabels <- attr(terms(formula), "term.labels")
